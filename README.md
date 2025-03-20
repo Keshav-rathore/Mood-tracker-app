@@ -23,5 +23,8 @@ A simple **Daily Mood Tracker** that allows users to log their daily mood, visua
 3. Use **Weekly View** to see recent moods.
 4. Use **Monthly View** to see a full month's history.
 
+## Deployed at : https://keshav-rathore.github.io/Mood-tracker-app/
+
 ## Request
+i have write few comments so don't think that it is gpt generated code
 
