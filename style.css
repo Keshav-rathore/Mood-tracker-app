@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeb99;
+    text-align: center;
+}
+
+.container {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mood-selection button {
+    font-size: 24px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.mood-btn.selected {
+    border: 2px solid orange;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.view-buttons {
+    margin: 15px 0;
+}
+
+.view-buttons button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-buttons .active {
+    background: darkorange;
+    color: white;
+}
+
+.calendar-container {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Weekly View (Default) */
+.calendar-container.weekly {
+    grid-template-columns: repeat(7, 50px);
+}
+
+/* Monthly View */
+.calendar-container.monthly {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 50px);
+}
+
+/* Calendar Cells */
+.calendar-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff3cd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Highlight Today */
+.today {
+    border: 2px solid orange;
+}
+
